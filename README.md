@@ -23,6 +23,8 @@ Clone the repository
 ```bash
 https://github.com/danfranc0/Kidney-Disease-Classification.git
 ```
+
+
 ### STEP 1- Create a conda environment
 
 ```bash
@@ -37,4 +39,32 @@ conda activate cnncls
 ### STEP 2- Install the requirements
 ```bash
 pip install -r requirements.txt
+```
+
+
+## MLflow
+
+- [Documentation](https://mlflow.org/docs/latest/index.html)
+
+##### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/danfranc0/Kidney-Disease-Classification.mlflow \
+MLFLOW_TRACKING_USERNAME=danfranc0 \
+MLFLOW_TRACKING_PASSWORD=2b7d0c976d6de2cbd9d3cbf08800716950255c81 \
+python script.py
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/danfranc0/Kidney-Disease-Classification.mlflow
+
+export MLFLOW_TRACKING_USERNAME=danfranc0
+
+export MLFLOW_TRACKING_PASSWORD=2b7d0c976d6de2cbd9d3cbf08800716950255c81
+
 ```
